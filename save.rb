@@ -1,4 +1,6 @@
 require 'csv'
+require 'json'
+require 'yaml'
 
 class Save
     def saveToCSV(file, data)
@@ -7,5 +9,13 @@ class Save
             csv << i.values
           }
         end
+    end
+
+    def saveToJson(file, data)
+      File.open(file, 'w+') { |f| f.puts data.to_json }
+    end
+
+    def saveToYaml(file, data)
+      File.open(file, 'w+') { |f| f.puts data.to_yaml }
     end
 end
