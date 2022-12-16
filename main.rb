@@ -1,0 +1,4 @@
+require_relative 'Fiction/fiction.rb'
+require_relative 'Motivation_literature/motivation_literature.rb'
+require_relative 'Documentary_literature/documentary_literature.rb'
+require_relative 'History_literature/history_literature.rb'
